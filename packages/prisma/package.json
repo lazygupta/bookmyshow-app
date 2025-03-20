@@ -1,5 +1,7 @@
 {
   "name": "@repo/db",
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -8,10 +10,10 @@
     "@types/node": "^22.13.10"
   },
   "exports": {
-    "./client": "./src/index.ts"
+    "./client": "./src/index.js"
   },
   "dependencies": {
     "@prisma/client": "6.5.0",
-    "prisma": "^6.5.0"
+    "prisma": "^6.3.0"
   }
 }
