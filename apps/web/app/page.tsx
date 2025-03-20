@@ -1,9 +1,12 @@
 import {client} from "@repo/db/client";
 
-export default function Home() {
+export default async function Home() {
+  const user = await client.user.findFirst();
   return (
     <div>
-      Hello World
+      Hello
+      {user?.username}
+      {user?.password}
     </div>
   );
 }
